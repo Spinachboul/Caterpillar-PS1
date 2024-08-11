@@ -1,0 +1,20 @@
+{
+    "tires": {
+      "tire_pressure_left_front": 35.0,
+      "tire_pressure_right_front": 34.5,
+      "tire_condition_left_front": "Good",
+      "tire_condition_right_front": "Ok",
+      "tire_pressure_left_rear": 33.0,
+      "tire_pressure_right_rear": 32.5,
+      "tire_condition_left_rear": "Needs Replacement",
+      "tire_condition_right_rear": "Good",
+      "overall_tire_summary": "The front left tire has good pressure but is worn out. Rear tires are in good condition.",
+      "attached_images": [
+        "base64_encoded_image_left_front",
+        "base64_encoded_image_right_front",
+        "base64_encoded_image_left_rear",
+        "base64_encoded_image_right_rear"
+      ]
+    }
+  }
+  

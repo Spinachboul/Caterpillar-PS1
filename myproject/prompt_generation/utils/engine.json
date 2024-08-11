@@ -1,0 +1,17 @@
+{
+    "engine": {
+      "engine_rust_dents_damage": true,
+      "damage_explanation": "Some rust observed around the engine block.",
+      "attached_images": [
+        "base64_encoded_image_engine_1",
+        "base64_encoded_image_engine_2"
+      ],
+      "engine_oil_condition": "Good",
+      "engine_oil_color": "Clean",
+      "brake_fluid_condition": "Good",
+      "brake_fluid_color": "Clean",
+      "oil_leak_engine": false,
+      "overall_summary": "The engine is in good condition with clean oil and no leaks."
+    }
+  }
+  

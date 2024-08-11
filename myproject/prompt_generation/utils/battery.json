@@ -1,0 +1,17 @@
+{
+    "battery": {
+      "battery_make": "CAT",
+      "battery_replacement_date": "2023-08-10",
+      "battery_voltage": 12.5,
+      "battery_water_level": "Good",
+      "battery_condition_damage": false,
+      "battery_damage_images": [],
+      "battery_leak_rust": false,
+      "battery_overall_summary": "The battery is in good condition with no visible damage or leaks.",
+      "attached_images": [
+        "base64_encoded_image_battery_1",
+        "base64_encoded_image_battery_2"
+      ]
+    }
+  }
+  

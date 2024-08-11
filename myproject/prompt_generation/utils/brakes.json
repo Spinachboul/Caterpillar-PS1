@@ -1,0 +1,14 @@
+{
+    "brakes": {
+      "brake_fluid_level": "Ok",
+      "brake_condition_front": "Good",
+      "brake_condition_rear": "Ok",
+      "emergency_brake": "Good",
+      "brake_overall_summary": "Brakes are in good condition with adequate fluid levels.",
+      "attached_images": [
+        "base64_encoded_image_brake_1",
+        "base64_encoded_image_brake_2"
+      ]
+    }
+  }
+  

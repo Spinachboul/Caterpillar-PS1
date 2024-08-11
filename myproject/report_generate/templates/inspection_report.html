@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inspection Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .section { margin: 20px 0; }
+        .images { margin-top: 10px; }
+        .image { margin: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Inspection Report</h1>
+        <p>Truck Serial Number: {{ header.truck_serial_number }}</p>
+        <p>Truck Model: {{ header.truck_model }}</p>
+        <p>Inspection ID: {{ header.inspection_id }}</p>
+        <p>Inspector Name: {{ header.inspector_name }}</p>
+        <p>Inspection Employee ID: {{ header.inspection_employee_id }}</p>
+        <p>Date & Time: {{ header.date_time }}</p>
+        <p>Location: {{ header.location }}</p>
+        <p>Geo Coordinates: {{ header.geo_coordinates }}</p>
+        <p>Service Meter Hours: {{ header.service_meter_hours }}</p>
+        <p>Inspector Signature: {{ header.inspector_signature }}</p>
+        <p>Customer Name: {{ header.customer_name }}</p>
+        <p>CAT Customer ID: {{ header.cat_customer_id }}</p>
+    </div>
+
+    <div class="section">
+        <h2>TIRES</h2>
+        <p>Tire Pressure for Left Front: {{ tires.pressure_left_front }}</p>
+        <p>Tire Pressure for Right Front: {{ tires.pressure_right_front }}</p>
+        <p>Tire Condition for Left Front: {{ tires.condition_left_front }}</p>
+        <p>Tire Condition for Right Front: {{ tires.condition_right_front }}</p>
+        <p>Tire Pressure for Left Rear: {{ tires.pressure_left_rear }}</p>
+        <p>Tire Pressure for Right Rear: {{ tires.pressure_right_rear }}</p>
+        <p>Tire Condition for Left Rear: {{ tires.condition_left_rear }}</p>
+        <p>Tire Condition for Right Rear: {{ tires.condition_right_rear }}</p>
+        <p>Overall Tire Summary: {{ tires.summary }}</p>
+        {% for image in tires.images %}
+            <img src="{{ image }}" class="image" width="300" />
+        {% endfor %}
+    </div>
+
+    <div class="section">
+        <h2>BATTERY</h2>
+        <p>Battery Make: {{ battery.make }}</p>
+        <p>Battery Replacement Date: {{ battery.replacement_date }}</p>
+        <p>Battery Voltage: {{ battery.voltage }}</p>
+        <p>Battery Water Level: {{ battery.water_level }}</p>
+        <p>Condition of Battery: {{ battery.condition }}</p>
+        <p>Any Leak/Rust: {{ battery.leak_rust }}</p>
+        <p>Overall Battery Summary: {{ battery.summary }}</p>
+        {% for image in battery.images %}
+            <img src="{{ image }}" class="image" width="300" />
+        {% endfor %}
+    </div>
+
+    <div class="section">
+        <h2>EXTERIOR</h2>
+        <p>Rust, Dent, or Damage to Exterior: {{ exterior.damage }}</p>
+        <p>Oil Leak in Suspension: {{ exterior.oil_leak }}</p>
+        <p>Overall Summary: {{ exterior.summary }}</p>
+        {% for image in exterior.images %}
+            <img src="{{ image }}" class="image" width="300" />
+        {% endfor %}
+    </div>
+
+    <div class="section">
+        <h2>BRAKES</h2>
+        <p>Brake Fluid Level: {{ brakes.fluid_level }}</p>
+        <p>Brake Condition for Front: {{ brakes.condition_front }}</p>
+        <p>Brake Condition for Rear: {{ brakes.condition_rear }}</p>
+        <p>Emergency Brake: {{ brakes.emergency_brake }}</p>
+        <p>Overall Brake Summary: {{ brakes.summary }}</p>
+        {% for image in brakes.images %}
+            <img src="{{ image }}" class="image" width="300" />
+        {% endfor %}
+    </div>
+
+    <div class="section">
+        <h2>ENGINE</h2>
+        <p>Rust, Dents, or Damage in Engine: {{ engine.damage }}</p>
+        <p>Engine Oil Condition: {{ engine.oil_condition }}</p>
+        <p>Engine Oil Color: {{ engine.oil_color }}</p>
+        <p>Brake Fluid Condition: {{ engine.brake_fluid_condition }}</p>
+        <p>Brake Fluid Color: {{ engine.brake_fluid_color }}</p>
+        <p>Any Oil Leak in Engine: {{ engine.oil_leak }}</p>
+        <p>Overall Summary: {{ engine.summary }}</p>
+        {% for image in engine.images %}
+            <img src="{{ image }}" class="image" width="300" />
+        {% endfor %}
+    </div>
+
+    <div class="section">
+        <h2>Voice of Customer</h2>
+        <p>Customer Feedback: {{ voice_of_customer.feedback }}</p>
+        {% for image in voice_of_customer.images %}
+            <img src="{{ image }}" class="image" width="300" />
+        {% endfor %}
+    </div>
+</body>
+</html>

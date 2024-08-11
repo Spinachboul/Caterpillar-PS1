@@ -1,0 +1,63 @@
+# Define prompts for each section
+prompts = {
+    "header": [
+        "Please provide the truck serial number.",
+        "What is the truck model?",
+        "Please provide the inspection ID.",
+        "Who is the inspector?",
+        "What is the inspection employee ID?",
+        "When is the inspection date and time?",
+        "Where is the location of the inspection?",
+        "Please provide the geo coordinates of the inspection.",
+        "What is the service meter hours reading?",
+        "Please provide the inspector's signature.",
+        "What is the customer or company name?",
+        "What is the CAT customer ID?"
+    ],
+    "tires": [
+        "What is the tire pressure for the left front tire?",
+        "What is the tire pressure for the right front tire?",
+        "What is the tire condition for the left front tire? (Good, Ok, Needs Replacement)",
+        "What is the tire condition for the right front tire? (Good, Ok, Needs Replacement)",
+        "What is the tire pressure for the left rear tire?",
+        "What is the tire pressure for the right rear tire?",
+        "What is the tire condition for the left rear tire? (Good, Ok, Needs Replacement)",
+        "What is the tire condition for the right rear tire? (Good, Ok, Needs Replacement)",
+        "Please provide an overall summary of the tires."
+    ],
+    "battery": [
+        "What is the battery make?",
+        "When was the battery replaced?",
+        "What is the battery voltage?",
+        "What is the battery water level? (Good, Ok, Low)",
+        "Is there any damage to the battery? (Yes/No)",
+        "Is there any leak or rust in the battery? (Yes/No)",
+        "Please provide an overall summary of the battery."
+    ],
+    "exterior": [
+        "Is there any rust, dent, or damage to the exterior? (Yes/No)",
+        "If yes, please explain.",
+        "Is there any oil leak in the suspension? (Yes/No)",
+        "Please provide an overall summary of the exterior."
+    ],
+    "brakes": [
+        "What is the brake fluid level? (Good, Ok, Low)",
+        "What is the brake condition for the front? (Good, Ok, Needs Replacement)",
+        "What is the brake condition for the rear? (Good, Ok, Needs Replacement)",
+        "What is the condition of the emergency brake? (Good, Ok, Low)",
+        "Please provide an overall summary of the brakes."
+    ],
+    "engine": [
+        "Is there any rust, dent, or damage in the engine? (Yes/No)",
+        "If yes, please explain.",
+        "What is the condition of the engine oil? (Good/Bad)",
+        "What is the color of the engine oil? (Clean/Brown/Black)",
+        "What is the condition of the brake fluid? (Good/Bad)",
+        "What is the color of the brake fluid? (Clean/Brown/Black)",
+        "Is there any oil leak in the engine? (Yes/No)",
+        "Please provide an overall summary of the engine."
+    ],
+    "voice_of_customer": [
+        "Please provide any feedback from the customer."
+    ]
+}

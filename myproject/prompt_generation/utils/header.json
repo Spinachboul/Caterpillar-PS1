@@ -1,0 +1,17 @@
+{
+    "header": {
+      "truck_serial_number": "7301234",
+      "truck_model": "730",
+      "inspection_id": 1,
+      "inspector_name": "John Doe",
+      "inspector_employee_id": "EMP123",
+      "inspection_date_time": "2024-08-10T14:30:00Z",
+      "location": "Warehouse 5",
+      "geo_coordinates": "12.3456, 65.4321",
+      "service_meter_hours": 12345,
+      "inspector_signature": "base64_encoded_signature",
+      "customer_name": "ACME Corp",
+      "cat_customer_id": "CUST5678"
+    }
+  }
+  

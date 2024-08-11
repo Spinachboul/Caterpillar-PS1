@@ -17,6 +17,16 @@ class Inspection(models.Model):
 
     def __str__(self):
         return f'{self.truck_serial_number} - {self.inspector_name}'
+    
+
+class InspectionResult(models.Model):
+    section = models.CharField(max_length=100)
+    text_result = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Section: {self.section}, Result: {self.text_result}"
+
 
 
 class Tire(models.Model):

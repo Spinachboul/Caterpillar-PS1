@@ -1,0 +1,13 @@
+{
+    "exterior": {
+      "rust_dent_damage": true,
+      "damage_explanation": "Minor rust on the rear panel and a dent on the left side.",
+      "attached_images": [
+        "base64_encoded_image_exterior_1",
+        "base64_encoded_image_exterior_2"
+      ],
+      "oil_leak_suspension": false,
+      "overall_summary": "The exterior has some cosmetic damage but no major issues with the suspension."
+    }
+  }
+  
